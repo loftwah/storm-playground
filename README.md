@@ -21,7 +21,7 @@ Responsible for **automated web searches** and **content extraction**. Using [Pl
 require 'playwright'
 require 'uri'
 
-SearchResult = Struct.new(:title, :snippet, :url, keyword_init: true)7
+SearchResult = Struct.new(:title, :snippet, :url, keyword_init: true)
 ContentResult = Struct.new(:url, :content, :error, :success, keyword_init: true)
 
 class WebScraper
